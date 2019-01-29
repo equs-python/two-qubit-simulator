@@ -9,16 +9,20 @@ class QuantumCircuit(object): # pylint: disable=useless-object-inheritance
     """
     def __init__(self):
         """ Initialise a QuantumCircuit object """
+        #TODO
         pass
 
     def add_gate(self, gate):
         """ Add a gate to the circuit """
+        #TODO
         pass
 
     def run_circuit(self, register):
         """ Run the circuit on a given quantum register """
+        #TODO
         pass
 
     def __call__(self, register):
         """ Run the circuit on a given quantum register """
+        #TODO
         pass

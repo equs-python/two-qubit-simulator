@@ -27,6 +27,7 @@ class QuantumGate(object): # pylint: disable=useless-object-inheritance
 
     def assert_operation_is_unitary(self):
         """ Checks that the input unitary operator is unitary """
+        #TODO
         pass
 
     def __call__(self, register):
