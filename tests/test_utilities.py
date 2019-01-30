@@ -2,6 +2,7 @@
 # test_utilities.py
 Test the functions in the utilities module
 """
+import numpy as np
 from two_qubit_simulator import conjugate_transpose
 
 def test_conjugate_transpose():
