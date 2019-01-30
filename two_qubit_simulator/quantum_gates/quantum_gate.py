@@ -27,7 +27,7 @@ class QuantumGate(object): # pylint: disable=useless-object-inheritance
 
     def assert_operation_is_unitary(self):
         """ Checks that the input unitary operator is unitary """
-        pass
+        assert unitary_operator.dot(conjugate_transpose(unitary_operator))== np.eye(4)
 
     def __call__(self, register):
         """ Apply the gate to a given qubit register. See apply_register method """
