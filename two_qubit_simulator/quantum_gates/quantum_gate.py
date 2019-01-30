@@ -18,15 +18,16 @@ class QuantumGate(object): # pylint: disable=useless-object-inheritance
         - - - CONTINUE DOUMENTATION FROM HERE - - -
 
     """
-    def __init__(self, unitary_operator, symbol=None):
+    def __init__(self, unitary_operator, symbol=None, dim = 2):
         """ Create a QuantumGate object """
         self.symbol = symbol
+        self.dim = dim
         self.unitary_operator = unitary_operator.astype(np.complex128)
-
         self.assert_operation_is_unitary()
 
     def assert_operation_is_unitary(self):
         """ Checks that the input unitary operator is unitary """
+        assert np.allclose(np.kron(self.unitary_operator.conj,self.unitary_operator),np.identity(self.dim))
         pass
 
     def __call__(self, register):
